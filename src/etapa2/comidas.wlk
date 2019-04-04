@@ -54,13 +54,13 @@ object canelones {
 	
 	method energiaPorGramo(){
 		if(tieneSalsa && not tieneQueso){
-			return 20 + 5
+			return 25
 		}
 		if(tieneQueso && not tieneSalsa){
-			return 20 + 7
+			return 27
 		}
 		if(tieneSalsa && tieneQueso){
-			return 20 + 7 + 5
+			return 32
 		}else{
 			return 20
 		}
