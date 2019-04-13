@@ -1,10 +1,10 @@
-
+import comidas.*
 object pepon {
-	// aca falta un atributo
+	var energia = 0
 	
-	method comer(cosa, cuanto) { }  // implementar
-	method volar(kms) { }           // implementar
-	method haceLoQueQuieras() { }   // implementar
+	method comer(cosa, cuanto) { energia += (cosa.energiaPorGramo() * cuanto) / 2 }  
+	method volar(kms) { energia -= (kms * 0.5 ) + 1 }
+	method haceLoQueQuieras() { self.volar(1) }
 }
 
 // implementar el objeto entero, salvo haceLoQueQuieras que lo damos hecho
@@ -21,3 +21,4 @@ object pipa {
 	 */
 	method haceLoQueQuieras() { }
 }
+//cambios
